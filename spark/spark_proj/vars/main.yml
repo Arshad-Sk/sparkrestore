@@ -1,8 +1,10 @@
 --- # vars
    #spark_version: "2.4.8-bin-hadoop2.7"
-   spark_version: "3.1.2-bin-hadoop2.7"
+   #spark_version: "3.1.2-bin-hadoop2.7"
+   spark_version: "3.0.1-bin-hadoop3.2"
    #spark_mirror: "https://downloads.apache.org/spark/spark-2.4.8"
-   spark_mirror: "https://downloads.apache.org/spark/spark-3.1.2"
+   #spark_mirror: "https://downloads.apache.org/spark/spark-3.1.2"
+   spark_mirror: "https://archive.apache.org/dist/spark/spark-3.0.1"
    spark_install_java: yes      # Required to check if you need to install Java dependency
    spark_src_dir: "/usr/local/src"
    spark_conf_dir: "/etc/spark"
@@ -51,15 +53,3 @@
        level: ERROR
 
    ansible_python_interpreter: /usr/bin/python
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-      
