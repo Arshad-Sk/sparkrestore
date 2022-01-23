@@ -11,7 +11,6 @@
     
     - name: Restore dir
       shell: "cp -R {{spark_usr_parent_dir}}/data_backup/spark-{{spark_version}}  {{spark_usr_parent_dir}}"
-      cp -R spark-3.0.1-bin-hadoop3.2/ /usr/lib
       ignore_errors: yes  
   
 
