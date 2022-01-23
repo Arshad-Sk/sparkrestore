@@ -1,0 +1,21 @@
+--- # Install
+- hosts: tag_Name_Master*,tag_Name_Slave*
+  user: ansible
+  become: yes
+  connection: ssh
+  gather_facts: yes
+  roles:
+          - spark_proj
+   
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+      
