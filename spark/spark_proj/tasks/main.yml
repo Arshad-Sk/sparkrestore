@@ -2,7 +2,6 @@
 
       ####################### Update /etc/hosts file     ##################
 
-    - include: etchost.yaml
       ####################### Update /etc/hosts file     ##################
     
     
