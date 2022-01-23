@@ -19,7 +19,7 @@
       become_user: '{{spark_user}}'
       shell: "sbin/start-all.sh"
       args:
-        chdir: "{{spark_usr_parent_dir}}/spark/"
+        chdir: "{{spark_usr_parent_dir}}/spark-{{spark_version}}/"
       ignore_errors: no
       when: inventory_hostname in groups['tag_Env_Master']
            
@@ -29,7 +29,7 @@
       become_user: '{{spark_user}}'
       shell: "sbin/start-history-server.sh"
       args:
-        chdir: "{{spark_usr_parent_dir}}/spark/"
+        chdir: "{{spark_usr_parent_dir}}/spark-{{spark_version}}/"
       ignore_errors: yes
       when: inventory_hostname in groups['tag_Env_Master']
 
